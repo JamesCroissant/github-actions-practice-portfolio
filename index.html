@@ -3,9 +3,240 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <title>Yu's Portfolio</title>
 </head>
+
+
 <body>
-  <h1>hello world1</h1>
+  <!-- header -->
+  <header>
+    <div class="logo">
+      <a href="#home">
+        <img src="./images/image_icon.png" />
+      </a>
+    </div>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <nav class="side-nav">
+      <a href="#works">works</a>
+      <a href="#about">about me</a>
+      <a href="#contact">contact</a>
+      <label for="menu-toggle" class="close-btn">&times;</label>
+    </nav>
+  </header>
+
+  <main>
+    <!-- home -->
+    <section id="home">
+      <div class="home">
+        <div class="home-left">
+          <img src="./images/image_profile.jpg">
+        </div>
+        <div class="home-right">
+          <h3>Hello!</h3>
+          <h3>I'm<span class="home-highlight-name">Yu Hamada.</span></h3>
+          <h3>I'm<span class="home-highlight-work">a web developer.</span></h3>
+        </div>
+      </div>
+      <div class="chevron-down">
+        <i class="fa-solid fa-chevron-down"></i>
+        <i class="fa-solid fa-chevron-down"></i>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- projects -->
+    <section id="works">
+      <h2>WORKS</h2>
+      <div class="works">
+        <div class="work-description">
+          <p>
+            Coaching of Programming and Developing an software tool 
+            / Online 2022 - present <br>
+            <br>
+            ・communicate with students and manage their studying schedule <br>
+            ・coaching programming and developing an software <br>
+            ・solve the problems of students <br>
+            ・market research in my field of expertise <br>
+          </p>
+        </div>
+        <div class="work-first">
+          <div class="work-left">
+            <img src="./images/image_work1.png" alt="image of work">
+          </div>
+          <div class="work-right">
+            <div class="work-content">
+              <h3>my-wordbooks</h3>
+              <p>
+                This application is for memorizing your own English words especially you don't understand.<br>
+                You can create your own vocabulary book by writing the word and meaning down in this app.
+              </p>
+            </div>
+    
+            <div class="actions">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <button>
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="work-second">
+          <div class="work-left">
+            <img src="./images/image_work2.jpg" alt="image of work">
+          </div>
+          <div class="work-right">
+            <div class="work-content">
+              <h3>car-share-app</h3>
+              <p>This app allows you to manage your car usage and schedule within a specific community.</p>
+            </div>
+    
+            <div class="actions">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <button>
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- about me -->
+    <section id="about">
+      <h2>ABOUT ME</h2>
+
+      <div class="about">
+        <div class="about-top">
+          <div class="about-top-left">
+            <p class="self-introduction">
+              I'm a web developer with a passion for both coding and coaching.<br>
+              With a solid background in developing software by online <br>
+              and teaching programming languages, <br>
+              I thrive in guiding others toward success. <br>
+              And also with 4 years of coaching experience, <br>
+              I've developed effective communication skills <br>
+              and an ability to simplify complex concepts. <br>
+              My passion for problem-solving and continuous learning <br>
+              keeps me engaged with the latest trends in the field. <br>
+              I'm excited to bring my coding skills, coaching experience, <br>
+              and enthusiasm for learning to collaborative projects.<br>
+            </p>  
+          </div>
+          <div class="about-top-right">
+            <div class="profile-image">
+              <img src="./images/image_profile.jpg" alt="Profile Picture">
+            </div>
+            <button type="button" class="resume-btn">
+              <a href="./images/yuhamada_webdeveloper.pdf" class="resume-btn-link">Resume</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="skills">
+            <h3>What I can do</h3>
+            <div class="icons">
+              <div class="language-icons">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/html5.svg" alt="HTML" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/css3.svg" alt="CSS" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/javascript.svg" alt="JavaScript" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/python.svg" alt="python" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/ruby.svg" alt="ruby" width="40" height="40">
+              </div>
+              <div class="framework-icons">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/react.svg" alt="React" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/nodedotjs.svg" alt="nodejs" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/redux.svg" alt="Redux" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/nextdotjs.svg" alt="nextjs" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/flask.svg" alt="flask" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/django.svg" alt="django" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/tensorflow.svg" alt="tensorflow" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/pytorch.svg" alt="pytorch" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/rubyonrails.svg" alt="Ruby on Rails" width="40" height="40">
+              </div>
+              <div class="infrastructure-icons">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/mongodb.svg" alt="mongodb" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/mysql.svg" alt="MySQL" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/sqlite.svg" alt="sqlite" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/amazonaws.svg" alt="aws" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/docker.svg" alt="docker" width="40" height="40">
+              </div>
+            </div>
+          </div>
+          <div class="education">
+            <h3>career / education</h3>
+            <div class="education-path">
+              <p>Cornerstone International Community College of Canada / Vancouver Canada <br> Web & Mobile App Development with CO-OP <br> Sep, 2023 - Present</p>
+              <p>Tokyo University of Science / Tokyo, Japan / Bachelor of physics <br> Apr, 2019 - Mar, 2023</p>
+            </div>
+          </div>
+          <div class="hobby">
+            <h3>What I like</h3>
+            <ul>
+              <li>snow boarding 🏂</li>
+              <li>running 🏃</li>
+              <li>sauna ♨️</li>
+              <li>driving 🚗</li>
+              <li>reading academic books 📕</li>
+              <li>traveling ✈️</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <section id="contact" class="contact-section">
+      <div class="contact-form">
+        <p>if you are interested in me...</p>
+        <h3>Get in Touch with me!</h3>
+        <form action="#" class="form">
+          <input type="name" name="email" placeholder="name" class="contact-name" />
+          <input type="text" name="text" placeholder="What can I help you?" class="contact-text" />
+          <button type="button" class="contact-btn" >
+            <a href="#" class="contact-btn-link">Submit</a>
+          </button>
+        </form>
+      </div>
+      <div class="contact-icons">
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.linkedin.com/in/yu-hamada-308893256/" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/JamesCroissant" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/yu_van_engineer" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:yuham1014@gmail.com" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
+        <p>&copy; 2023 Yu Hamada. All rights reserved.</p>
+      </div>
+    </section>
+  </footer>
+
 </body>
 </html>
